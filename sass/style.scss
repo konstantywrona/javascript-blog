@@ -66,7 +66,6 @@ a:hover {
 
 .posts {
   flex: 2 0 0;
-  position: relative;
 }
 
 .sidebar,
@@ -117,12 +116,9 @@ a:hover {
 /* Post */
 
 .post {
-  opacity: 0;
-  transition: opacity 1s;
-  position: absolute;
+  display: none;
   &.active {
-    z-index: 1;
-    opacity: 1;
+    display: block;
   }
 }
 
@@ -141,6 +137,9 @@ a:hover {
 .post-tags {
   display: flex;
   p {
+    margin: 0 10px 0 0;
+  }
+  li {
     margin: 0 10px 0 0;
   }
 }
