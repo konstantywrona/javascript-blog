@@ -2,8 +2,8 @@
 
 /* Variables */
 
-$color-light: #2d3436;
-$color-dark: #81ecec;
+$color-dark: #2d3436;
+$color-light: #81ecec;
 
 $font-logo: "Sacramento", cursive;
 $font-header: "Oswald", sans-serif;
@@ -18,9 +18,9 @@ $font-text: "Source Sans Pro", sans-serif;
 }
 
 body {
-  background: $color-light;
+  background: $color-dark;
   font-family: $font-text;
-  color: $color-dark;
+  color: $color-light;
   font-weight: 300;
   font-size: 16px;
   line-height: 1.7;
@@ -39,7 +39,7 @@ body {
   span {
     text-transform: none;
     font-weight: 400;
-    color: lighten($color-dark, 20%);
+    color: darken($color-light, 20%);
   }
 }
 
@@ -70,10 +70,10 @@ a:hover {
 
 .sidebar,
 .posts {
-  background: $color-light;
+  background: $color-dark;
   margin-right: 10px;
   padding: 40px;
-  border: 1px solid $color-dark;
+  border: 1px solid $color-light;
   border-radius: 5px;
   text-align: center;
 }
@@ -132,6 +132,12 @@ a:hover {
 
 .post-author {
   font-style: italic;
+  a {
+    color: $color-light;
+  }
+  a:hover {
+    color: #fab1a0;
+  }
 }
 
 .post-tags {
