@@ -15,4 +15,7 @@ module.exports = {
     "no-console": ["off"],
     "no-prototype-builtins": ["off"],
   },
+  globals: {
+    Handlebars: false,
+  },
 };
